@@ -25,3 +25,8 @@ create_json('/home/data/ljf/workspace/SegmentationDataset/MSCOCO/train2017',
 create_json('/home/data/ljf/workspace/SegmentationDataset/MSCOCO/val2017',
                  '/home/data/ljf/workspace/SegmentationDataset/MSCOCO/annotations/captions_val2017.json',
                  'data/coco_val2017.json')
+
+# create coco_test.json
+create_json('/home/data/ljf/workspace/SegmentationDataset/MSCOCO/test2017',
+                 '/home/data/ljf/workspace/SegmentationDataset/MSCOCO/annotations/captions_val2017.json',
+                 'data/coco_test2017.json')
