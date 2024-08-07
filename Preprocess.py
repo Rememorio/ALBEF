@@ -11,7 +11,7 @@ def create_json(image_dir, annotation_file, output_file):
         image_id = annotation['image_id']
         caption = annotation['caption']
         image_filename = f"{image_dir}/{image_id:012d}.jpg"
-        cc3m_data.append({'image': image_filename, 'caption': caption})
+        cc3m_data.append({'image_id': image_id, 'image': image_filename, 'caption': caption})
 
     with open(output_file, 'w') as json_file:
         json.dump(cc3m_data, json_file)
